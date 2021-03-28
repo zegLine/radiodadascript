@@ -17,12 +17,18 @@ function modifydom() {
     let song3 = document.querySelector("#song3");
     let song4 = document.querySelector("#song4");
 
-    nextsong.textContent = songs[0];
-    currentsong.textContent = songs[1];
-    song1.textContent = songs[2];
-    song2.textContent = songs[3];
-    song3.textContent = songs[4];
-    song4.textContent = songs[5];
+    if (nextsong)
+        nextsong.textContent = songs[0];
+    if (currentsong)
+        currentsong.textContent = songs[1];
+    if (song1)
+        song1.textContent = songs[2];
+    if (song2)
+        song2.textContent = songs[3];
+    if (song3)
+        song3.textContent = songs[4];
+    if (song4)
+        song4.textContent = songs[5];
 }
 
 function getsongs(html) {
